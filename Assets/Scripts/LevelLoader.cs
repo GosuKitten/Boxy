@@ -86,7 +86,7 @@ public class LevelLoader : MonoBehaviour {
                 }
             }
         }
-        cameraTransform.position = new Vector3(mapWidth/2, mapHeight/2, -10);
+        cameraTransform.position = new Vector3(mapWidth/2 - 0.5f, mapHeight/2 - 0.5f, -10);
 
         if (OnLevelSpawned != null)
             OnLevelSpawned();
